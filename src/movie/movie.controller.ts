@@ -71,13 +71,13 @@ export class MovieController {
     return this.movieService.create(dto);
   }
 
-  @Put('update/:id')
-  public updateMovie(@Param('id') id: string, @Body() dto: MovieDto) {
-    return this.movieService.update(id, dto);
-  }
+  // @Put('update/:id')
+  // public updateMovie(@Param('id') id: string, @Body() dto: MovieDto) {
+  //   return this.movieService.update(id, dto);
+  // }
 
-  @Delete(':id')
-  public deleteMovie(@Param('id') id: string) {
-    return this.movieService.delete(id);
-  }
+  // @Delete(':id')
+  // public deleteMovie(@Param('id') id: string) {
+  //   return this.movieService.delete(id);
+  // }
 }
